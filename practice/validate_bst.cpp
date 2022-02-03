@@ -1,6 +1,7 @@
 #include <iostream>
 #include "bst.h"
 
+//Key: All nodes to left of root must be smaller, all nodes to right of root must be larger.
 bool Util(Node* root, int max, int min)
 {
     if (!root) //stopping condition

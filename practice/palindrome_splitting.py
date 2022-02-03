@@ -1,3 +1,4 @@
+
 def palindrome_splitting(s):
     results = []
     util(s,[], results, 0)
@@ -5,10 +6,10 @@ def palindrome_splitting(s):
 
 def util(s, current, results, start):
     #stopping condition
-    if start == len(s):
+    if start == len(s): #only get here if fully split into plindromes
         results.append(current)
     i = start
-    while i < len(s):
+    while i < len(s):           # Try all possibilities
         if isPalindrome(s, start, i):
             copy = list(current)
             copy.append(s[start:i+1])
